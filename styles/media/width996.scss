@@ -1,0 +1,36 @@
+@media (max-width: 996px) {
+    header{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: black; /* Задаем черный цвет для фона */
+      color: white;           /* Белый текст */
+    }
+    .navbar-nav{
+      font-family: 'Gilroy', sans-serif;
+      font-size: 16px;
+      gap: 44px
+    }
+
+
+    .modal-content {
+      width: 700px;
+      height: 420px;
+      .close {
+          margin-top: 20px;
+          margin-right: 20px;
+        img, svg {
+          block-size: 30px;
+        }
+      }
+      .g-extra-48 {
+        font-size: 28px;
+      }
+      .j-regular-32 {
+        font-size: 22px;
+    }
+    .j-regular-24 {
+      font-size: 16px;
+  }
+  }
+
+  }

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@media (max-width: 996px) {
+  header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black; /* Задаем черный цвет для фона */
+    color: white; /* Белый текст */
+  }
+  .navbar-nav {
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    gap: 44px;
+  }
+  .modal-content {
+    width: 700px;
+    height: 420px;
+  }
+  .modal-content .close {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .modal-content .close img, .modal-content .close svg {
+    block-size: 30px;
+  }
+  .modal-content .g-extra-48 {
+    font-size: 28px;
+  }
+  .modal-content .j-regular-32 {
+    font-size: 22px;
+  }
+  .modal-content .j-regular-24 {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=width996.css.map */

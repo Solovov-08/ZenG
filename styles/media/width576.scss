@@ -1,0 +1,99 @@
+@media (max-width:576px) {
+    .img-logo-mobile{
+      display: block;
+      position: relative;
+      z-index: 6;
+    }
+    .img-logo{
+      display: none;
+    }
+    .box-1{
+      padding-top: 200px;
+      padding-left: 20px;
+      height: 350px;
+    }
+    .box-2{
+      .title-box2{
+        padding-left: 5px;
+      }
+      .col-sm-5{
+        width: auto;
+      }
+      .col-sm-4{
+        width: auto;
+      }
+      .mx-3 {
+        margin-right: 0rem !important;
+        margin-left: 0rem !important;
+    }
+      .cart-box{
+        width: 83%;
+    }
+    }
+    .row-box22{
+      flex-direction: column-reverse;
+    }
+    .img-place{
+      display: none;
+    }
+    .box-3{
+      padding-top: 70px;
+      border-radius: 0px;
+      height: 200px;
+      max-width: 100%;
+    }
+    .box-4{
+      .title-box4{
+        padding-left: 5px;
+      }
+      form{
+        margin-left: 10px;
+      }
+    }
+    .box-5{
+      .title-box5{
+        padding-left: 5px;
+        padding-top: 40px;
+      }
+    }
+
+    .box-faq{
+      padding: 40px 20px;
+      text-shadow: 0px 0px 12px #000000;
+    }
+
+    .box-faq1{
+      background-size: 150px;
+    }
+    
+    .box-faq2{
+      background-size: 175px;
+    }
+    
+    .box-faq3{
+      background-size: 240px;
+      padding: 30px 20px;
+    }
+    
+    .box-faq4{
+      background-size: 100%;
+    }
+    
+    .box-faq5{
+      padding: 25px 20px;
+      background-size: 70%;
+    }
+    
+    .box-faq6{
+      padding: 25px 20px;
+      background-size: 115%;
+    }
+
+    .modal-content {
+      .prev-btn, .next-btn {
+        top: 32%;
+        font-size: 30px;
+      }
+   }
+
+  }

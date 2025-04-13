@@ -1,0 +1,35 @@
+@media (max-width: 1400px) {
+  .box-faq {
+    height: 155px;
+    padding: 50px 30px;
+  }
+  .box-faq3 {
+    padding: 35px 30px;
+  }
+  .box-faq4 {
+    padding: 50px 10px;
+    line-height: 0.8;
+  }
+  .box-faq5 {
+    padding: 40px 20px;
+  }
+  .box-faq6 {
+    padding: 40px 30px;
+  }
+  .modal-content {
+    width: 950px;
+    height: 552px;
+  }
+  .modal-content .g-extra-48 {
+    font-size: 42px;
+  }
+  .cart-text-modal {
+    margin-left: 20px;
+  }
+  .prev-btn {
+    left: 0px;
+  }
+  .next-btn {
+    right: 300px;
+  }
+}/*# sourceMappingURL=width1400.css.map */

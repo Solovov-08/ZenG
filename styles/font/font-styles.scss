@@ -1,0 +1,119 @@
+.g-extra-48{
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+
+.g-extra-42{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: white;
+  }
+
+  .g-extra-34{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: white;
+  }
+
+  .g-extra-32{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+  }
+
+.g-light-18{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 250;
+    font-size: 18px;
+    color: white;
+  }
+
+.g-light-20{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 250;
+    font-size: 20px;
+    color: white;
+  }
+
+.j-regular-32{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 0.9; 
+    color: white;
+}
+
+.j-regular-24{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 0.9; 
+    color: white;
+}
+
+@media (max-width: 1200px) {
+
+  .j-regular-24{
+    font-weight: 350;
+    line-height: 1; 
+    font-size: 18px;
+  }
+
+  .g-extra-34{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .g-extra-34{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .g-extra-42{
+    font-size: 38px;
+  }
+
+  .g-extra-32{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    color: white;
+  }
+
+  .g-extra-34{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+  }
+
+}
+
+@media (max-width:576px) {
+
+  .g-extra-42{
+    font-size: 27px;
+  }
+
+  .g-light-20{
+    font-size: 16px;
+  }
+
+}

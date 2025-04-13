@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+  .box-1 {
+    height: 415px;
+    background-image: url("../img/background-box1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding-top: 200px;
+    padding-left: 50px;
+  }
+  .cart-box-text {
+    padding: 20px 0px 10px 15px;
+  }
+  .box-4 {
+    margin-top: 30px;
+  }
+  .box-4 .title-box4 {
+    padding-left: 30px;
+  }
+  .box-4 form {
+    margin-left: 35px;
+  }
+  .box-5 .title-box5 {
+    padding-left: 42px;
+  }
+  .box-faq {
+    height: 105px;
+    padding: 35px 30px;
+  }
+  .box-faq3 {
+    padding: 30px 30px;
+  }
+  .box-faq4 {
+    padding: 40px 10px;
+    line-height: 0.8;
+  }
+  .box-faq5 {
+    padding: 30px 10px;
+  }
+  .box-faq6 {
+    padding: 30px 30px;
+  }
+}/*# sourceMappingURL=width992.css.map */
