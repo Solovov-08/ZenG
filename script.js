@@ -144,7 +144,7 @@ switcher.addEventListener('click', () => {
     frame1.style.display = 'block';
     frame2.style.display = 'none';
   } else {
-    toggleKnob.style.left = '200px';
+    toggleKnob.style.left = '150px';
     toggleText.textContent = 'RGB';
     frame1.style.display = 'none';
     frame2.style.display = 'block';

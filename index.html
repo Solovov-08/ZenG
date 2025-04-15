@@ -6,14 +6,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         
 
-        <!-- Подключаем Jost из Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
-        <!-- Подключаем Gilroy из Google Fonts -->
-        <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-
         <!-- Подключаем CSS -->
         <link href="styles/main.css" rel="stylesheet">
         <link href="styles/main-media.css" rel="stylesheet">
+
+        <!-- Microsoft Clarity -->
+        <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "r4jqqnbrf5");
+        </script>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3NYJGTEN"></script>
@@ -83,7 +87,7 @@
             <p class="g-light-20">Мы создаём свет, который вдохновляет.</p>
         </div>
         <div class="row row-box2">
-            <div class="col-sm-5 col-md-6 col-lg-5">
+            <div class="col-2 col-sm-5 col-md-6 col-lg-5">
                 <p class="j-regular-24">Каждый наш светильник — это больше, чем источник освещения. Это сочетание дизайнерского искусства, функциональности и тонкой работы мастеров. Мы верим, что свет способен менять пространство, делая его уютным, стильным и по-настоящему уникальным.</p>
             </div>
             <div class="col-sm-5 col-md-4 col-lg-4">
@@ -103,11 +107,11 @@
       
       <div class="frames">
         <div class="frame" id="frame1" style="display: block;"><div class="box-3d">
-            <model-viewer src="./треуголка_lighting_1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0" shadow-softness="0" exposure="0.98" camera-orbit="1109deg 72.23deg 515.1m" field-of-view="22.98deg" auto-rotate class="col-4"> </model-viewer>
+            <model-viewer src="./model/model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0" shadow-softness="0" exposure="0.98" camera-orbit="0deg 72deg 0.6m" field-of-view="22.98deg" auto-rotate class="col-5"> </model-viewer>
         </div></div>
         <div class="frame" id="frame2" style="display: none;">
             <div class="box-3d">
-                <model-viewer src="треуголка_lighting_1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0" shadow-softness="0" exposure="0.98" camera-orbit="1109deg 72.23deg 515.1m" field-of-view="22.98deg" auto-rotate class="col-4"> </model-viewer>
+                <model-viewer src="./model/model_RGB.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0" shadow-softness="0" exposure="0.98" camera-orbit="0deg 72deg 0.6m" field-of-view="22.98deg" auto-rotate class="col-5"> </model-viewer>
             </div></div>
         </div>
       </div>
@@ -280,14 +284,13 @@
         <div class="modal-content">
           <span class="close" onclick="closeModal('modal3')"><img src="img/close.png" alt=""></span>
             <div class="cart-text-modal">
-                <p class="g-extra-48 title-cart-modal">Starter KIT 6</p>
+                <p class="g-extra-48 title-cart-modal">Как подключить </br>светильники?</p>
                 <div class="list-cart-box-modal">
                     <ul class="cart-list">
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">Скачайте приложение BanlanX (доступно для iOS и Android)</li>
+                        <li class="j-regular-24">Включите светильник и активируйте режим сопряжения</li>
+                        <li class="j-regular-24">В приложении выберите «Добавить устройство» и следуйте инструкциям</li>
+                        <li class="j-regular-24">Настройте освещение под свои предпочтения: цвет, яркость, сцены</li>
                     </ul>
                 </div>
             </div>
@@ -297,14 +300,14 @@
         <div class="modal-content" style="background-image: url('./img/img-modalFAQ2.png');">
           <span class="close" onclick="closeModal('modal4')"><img src="img/close.png" alt=""></span>
             <div class="cart-text-modal">
-                <p class="g-extra-48 title-cart-modal">Starter KIT 6</p>
+                <p class="g-extra-48 title-cart-modal">Как управлять?</p>
                 <div class="list-cart-box-modal">
                     <ul class="cart-list">
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">Через приложение – регулируйте яркость, цвет и эффекты</li>
+                        <li class="j-regular-24">Голосовые команды – работа с Google Assistant и Яндекс Алиса</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
                     </ul>
                 </div>
             </div>
@@ -314,14 +317,14 @@
         <div class="modal-content" style="background-image: url('./img/img-modalFAQ3.png');">
           <span class="close" onclick="closeModal('modal5')"><img src="img/close.png" alt=""></span>
             <div class="cart-text-modal">
-                <p class="g-extra-48 title-cart-modal">Starter KIT 6</p>
+                <p class="g-extra-42 title-cart-modal">Сколько панелей </br>можно подключить?</p>
                 <div class="list-cart-box-modal">
                     <ul class="cart-list">
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">Базовый комплект – до 30 панелей на один контроллер (рекомендуемый максимум для стабильной работы).</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
                     </ul>
                 </div>
             </div>
@@ -331,14 +334,14 @@
         <div class="modal-content" style="background-image: url('./img/img-modalFAQ4.png');">
           <span class="close" onclick="closeModal('modal6')"><img src="img/close.png" alt=""></span>
             <div class="cart-text-modal">
-                <p class="g-extra-48 title-cart-modal">Starter KIT 6</p>
+                <p class="g-extra-42 title-cart-modal">Возможности работы</br> с умным домом</p>
                 <div class="list-cart-box-modal">
                     <ul class="cart-list">
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">Apple HomeKit (Siri)</li>
+                        <li class="j-regular-24">Google Home</li>
+                        <li class="j-regular-24">Яндекс Алиса</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
                     </ul>
                 </div>
             </div>
@@ -348,14 +351,14 @@
         <div class="modal-content" style="background-image: url('./img/img-modalFAQ5.png');">
           <span class="close" onclick="closeModal('modal7')"><img src="img/close.png" alt=""></span>
             <div class="cart-text-modal">
-                <p class="g-extra-48 title-cart-modal">Starter KIT 6</p>
+                <p class="g-extra-42 title-cart-modal">На какие поверхности </br>можно крепить?</p>
                 <div class="list-cart-box-modal">
                     <ul class="cart-list">
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
-                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">Любые типы обоев</li>
+                        <li class="j-regular-24">Покрашенные стены (матовые или глянцевые)</li>
+                        <li class="j-regular-24">Штукатурка</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
                     </ul>
                 </div>
             </div>

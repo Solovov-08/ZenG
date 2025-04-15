@@ -1,44 +1,67 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Gilroy";
+  src: url("./font/Gilroy-Light.woff") format("woff");
+  font-weight: 250;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("./font/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("./font/Jost-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .g-extra-48 {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  color: white;
+  line-height: normal;
+  color: #fff;
 }
-
 .g-extra-42 {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 42px;
-  color: white;
+  line-height: normal;
+  color: #fff;
 }
-
 .g-extra-34 {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 34px;
-  color: white;
+  line-height: normal;
+  color: #fff;
 }
-
 .g-extra-32 {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 32px;
-  color: white;
+  line-height: normal;
+  color: #fff;
 }
 
 .g-light-18 {
   font-family: "Gilroy", sans-serif;
   font-weight: 250;
   font-size: 18px;
-  color: white;
+  line-height: normal;
+  color: #fff;
 }
-
 .g-light-20 {
   font-family: "Gilroy", sans-serif;
   font-weight: 250;
   font-size: 20px;
-  color: white;
+  line-height: normal;
+  color: #fff;
 }
 
 .j-regular-32 {
@@ -46,15 +69,14 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 0.9;
-  color: white;
+  color: #fff;
 }
-
 .j-regular-24 {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 0.9;
-  color: white;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
@@ -64,18 +86,13 @@
     font-size: 18px;
   }
   .g-extra-34 {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 700;
     font-size: 28px;
-    color: white;
   }
 }
 @media (max-width: 992px) {
   .g-extra-34 {
-    font-family: "Gilroy", sans-serif;
     font-weight: 600;
     font-size: 24px;
-    color: white;
   }
 }
 @media (max-width: 768px) {
@@ -83,16 +100,10 @@
     font-size: 38px;
   }
   .g-extra-32 {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 700;
     font-size: 27px;
-    color: white;
   }
   .g-extra-34 {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 700;
     font-size: 20px;
-    color: white;
   }
 }
 @media (max-width: 576px) {
@@ -104,6 +115,7 @@
   }
 }
 body {
+  zoom: 0.9;
   margin: 0px;
   padding: 0px;
   background-color: #131212;
@@ -344,7 +356,7 @@ button:hover {
   background-color: #202020;
   border-radius: 25px;
   height: 180px;
-  padding: 60px 30px;
+  padding: 70px 30px;
   transition: box-shadow 0.5s ease;
 }
 .box-faq:hover {
@@ -374,7 +386,7 @@ button:hover {
 
 .box-faq3 {
   line-height: 0.8;
-  padding: 45px 30px;
+  padding: 35px 30px;
   text-align: right;
   background-image: url("../img/img-FAQbox3.png"); /* Укажите путь к вашему изображению */
   background-repeat: no-repeat; /* Повторение только по вертикали */
@@ -384,7 +396,7 @@ button:hover {
 
 .box-faq4 {
   text-align: center;
-  padding: 60px 10px;
+  padding: 70px 10px;
   background-image: url("../img/img-FAQbox4.png"); /* Укажите путь к вашему изображению */
   background-repeat: no-repeat; /* Повторение только по вертикали */
   background-size: 110%;
@@ -394,7 +406,7 @@ button:hover {
 .box-faq5 {
   text-align: right;
   line-height: 0.8;
-  padding: 45px 30px;
+  padding: 35px 30px;
   background-image: url("../img/img-FAQbox5.png"); /* Укажите путь к вашему изображению */
   background-repeat: no-repeat; /* Повторение только по вертикали */
   background-size: 100%;
@@ -404,7 +416,7 @@ button:hover {
 .box-faq6 {
   text-align: left;
   line-height: 0.8;
-  padding: 45px 30px;
+  padding: 35px 30px;
   background-image: url("../img/img-FAQbox6.png"); /* Укажите путь к вашему изображению */
   background-repeat: no-repeat; /* Повторение только по вертикали */
   background-size: 100%;
@@ -547,7 +559,7 @@ footer {
 }
 
 .switcher {
-  width: 400px;
+  width: 350px;
   height: 60px;
   background: #393939;
   border-radius: 30px;
