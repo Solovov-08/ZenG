@@ -1,0 +1,100 @@
+// =============================================
+// Подключение шрифтов
+// =============================================
+
+// Gilroy Regular (weight 250)
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./font/Gilroy-Light.woff') format('woff');
+  font-weight: 250;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Gilroy Bold (weight 700)
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./font/Gilroy-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Jost Regular (weight 400)
+@font-face {
+  font-family: 'Jost';
+  src: url('./font/Jost-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// =============================================
+// Переменные и миксины
+// =============================================
+$gilroy: 'Gilroy', sans-serif;
+$jost: 'Jost', sans-serif;
+$white: #fff;
+
+@mixin font-props($family, $weight, $size, $line-height: normal) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size + px;
+  line-height: $line-height;
+  color: $white;
+}
+
+// =============================================
+// Стили классов
+// =============================================
+.g-extra {
+  &-48 { @include font-props($gilroy, 700, 48) }
+  &-42 { @include font-props($gilroy, 700, 42) }
+  &-34 { @include font-props($gilroy, 700, 34) }
+  &-32 { @include font-props($gilroy, 700, 32) }
+}
+
+.g-light {
+  &-18 { @include font-props($gilroy, 250, 18) }
+  &-20 { @include font-props($gilroy, 250, 20) }
+}
+
+.j-regular {
+  &-32 { @include font-props($jost, 400, 32, 0.9) }
+  &-24 { @include font-props($jost, 400, 24, 0.9) }
+}
+
+// =============================================
+// Адаптив
+// =============================================
+@media (max-width: 1200px) {
+  .j-regular-24 {
+    font-weight: 350;
+    line-height: 1;
+    font-size: 18px;
+  }
+
+  .g-extra-34 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .g-extra-34 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .g-extra {
+    &-42 { font-size: 38px }
+    &-32 { font-size: 27px }
+    &-34 { font-size: 20px }
+  }
+}
+
+@media (max-width: 576px) {
+  .g-extra-42 { font-size: 27px }
+  .g-light-20 { font-size: 16px }
+}

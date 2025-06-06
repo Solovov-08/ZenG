@@ -1,0 +1,610 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gilroy";
+  src: url("./font/Gilroy-Light.woff") format("woff");
+  font-weight: 250;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("./font/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("./font/Jost-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.g-extra-48 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: normal;
+  color: #fff;
+}
+.g-extra-42 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: normal;
+  color: #fff;
+}
+.g-extra-34 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: normal;
+  color: #fff;
+}
+.g-extra-32 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: normal;
+  color: #fff;
+}
+
+.g-light-18 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 250;
+  font-size: 18px;
+  line-height: normal;
+  color: #fff;
+}
+.g-light-20 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 250;
+  font-size: 20px;
+  line-height: normal;
+  color: #fff;
+}
+
+.j-regular-32 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 0.9;
+  color: #fff;
+}
+.j-regular-24 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.9;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .j-regular-24 {
+    font-weight: 350;
+    line-height: 1;
+    font-size: 18px;
+  }
+  .g-extra-34 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 992px) {
+  .g-extra-34 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .g-extra-42 {
+    font-size: 38px;
+  }
+  .g-extra-32 {
+    font-size: 27px;
+  }
+  .g-extra-34 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .g-extra-42 {
+    font-size: 27px;
+  }
+  .g-light-20 {
+    font-size: 16px;
+  }
+}
+
+html {
+  color-scheme: only light;
+}
+
+img, svg {
+  filter: none !important;
+  color: initial !important;
+}
+
+
+body {
+  zoom: 0.9;
+  margin: 0px;
+  padding: 0px;
+  background-color: #131212;
+  background-image: url("../img/body-background.svg"); /* Укажите путь к вашему изображению */
+  background-repeat: repeat-y; /* Повторение только по вертикали */
+  background-position: calc(80% + 20px) 50px; /* Отступ слева адаптивный */
+  overflow-y: scroll; /* Прокрутка работает, но скроллбар не виден */
+  scrollbar-width: thin; /* Для Firefox */
+}
+
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+  width: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Класс для блокировки прокрутки */
+.no-scroll {
+  overflow: hidden; /* Отключаем прокрутку */
+}
+
+.img-logo-mobile {
+  display: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black; /* Задаем черный цвет для фона */
+  color: white; /* Белый текст */
+  z-index: 5;
+}
+
+.img-logo {
+  position: relative;
+  z-index: 6;
+}
+
+.navbar-nav {
+  gap: 44px;
+}
+
+.nav-link-box {
+  display: flex;
+}
+
+.header_burger1 {
+  display: none;
+}
+
+.box-1 {
+  margin-top: 10px;
+  height: 615px;
+  background-image: url("../img/background-box1.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding-top: 313px;
+  padding-left: 100px;
+}
+
+.box-2 {
+  padding-top: 75px;
+}
+.box-2 .title-box2 {
+  padding-left: 90px;
+}
+.box-2 .row-box2 {
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-triangle {
+  width: 100%; /* или заданные размеры */
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+.img-triangle.hover {
+  opacity: 1;
+}
+
+.box-3d {
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  /* Скрываем значок мобильного телефона */
+  /* Делаем 3D плеер на весь браузер */
+}
+.box-3d #ar-prompt {
+  display: none;
+}
+.box-3d model-viewer {
+  height: 40vh;
+}
+
+.cart-row {
+  margin-top: 45px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cart-box {
+  background-color: #202020;
+  border-radius: 10px;
+  transition: box-shadow 0.5s ease;
+}
+.cart-box:hover {
+  box-shadow: 0 0px 20px rgba(255, 255, 255, 0.125);
+  transition: box-shadow 0.2s ease;
+}
+
+.cart-box-text {
+  padding: 30px 0px 45px 25px;
+}
+
+.box-3 {
+  padding-top: 120px;
+  margin-top: 50px;
+  height: 463px;
+  background-image: url("../img/background-box3.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.box-4 {
+  margin-top: 80px;
+}
+.box-4 .title-box4 {
+  padding-left: 90px;
+}
+
+form {
+  margin-left: 90px;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.9;
+  color: white;
+}
+
+input {
+  padding: 7px 140px 7px 20px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #252424;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 250;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  height: 41px;
+  width: 340px;
+}
+
+input::-moz-placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 250;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.329);
+  opacity: 1; /* Прозрачность текста */
+}
+
+input::placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 250;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.329);
+  opacity: 1; /* Прозрачность текста */
+}
+
+input:focus::-moz-placeholder {
+  color: #ccc; /* Меняем цвет при фокусе */
+}
+
+input:focus::placeholder {
+  color: #ccc; /* Меняем цвет при фокусе */
+}
+
+.form-box-but {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.9;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  height: 51px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #fffefe;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 47px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.9;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b6b6b6;
+}
+
+.box-5 {
+  padding-left: 90px;
+}
+
+.title-box5 {
+  padding-top: 75px;
+  padding-bottom: 44px;
+}
+
+.box-faq {
+  background-color: #202020;
+  border-radius: 25px;
+  height: 180px;
+  padding: 70px 30px;
+  transition: box-shadow 0.5s ease;
+}
+.box-faq:hover {
+  box-shadow: 0 0px 20px rgba(255, 255, 255, 0.125);
+  transition: box-shadow 0.2s ease;
+}
+
+.row-box-faq {
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.box-faq1 {
+  background-image: url("../img/img-FAQbox1.png"); /* Укажите путь к вашему изображению */
+  background-repeat: no-repeat; /* Повторение только по вертикали */
+  background-size: 50%;
+  background-position: bottom right; /* Отступ слева адаптивный */
+}
+
+.box-faq2 {
+  text-align: right;
+  background-image: url("../img/img-FAQbox2.png"); /* Укажите путь к вашему изображению */
+  background-repeat: no-repeat; /* Повторение только по вертикали */
+  background-size: 50%;
+  background-position: bottom left; /* Отступ слева адаптивный */
+}
+
+.box-faq3 {
+  line-height: 0.8;
+  padding: 35px 30px;
+  text-align: right;
+  background-image: url("../img/img-FAQbox3.png"); /* Укажите путь к вашему изображению */
+  background-repeat: no-repeat; /* Повторение только по вертикали */
+  background-size: 60%;
+  background-position: left; /* Отступ слева адаптивный */
+}
+
+.box-faq4 {
+  text-align: center;
+  padding: 70px 10px;
+  background-image: url("../img/img-FAQbox4.png"); /* Укажите путь к вашему изображению */
+  background-repeat: no-repeat; /* Повторение только по вертикали */
+  background-size: 110%;
+  background-position: center; /* Отступ слева адаптивный */
+}
+
+.box-faq5 {
+  text-align: right;
+  line-height: 0.8;
+  padding: 35px 30px;
+  background-image: url("../img/img-FAQbox5.png"); /* Укажите путь к вашему изображению */
+  background-repeat: no-repeat; /* Повторение только по вертикали */
+  background-size: 100%;
+  background-position: center; /* Отступ слева адаптивный */
+}
+
+.box-faq6 {
+  text-align: left;
+  line-height: 0.8;
+  padding: 35px 30px;
+  background-image: url("../img/img-FAQbox6.png"); /* Укажите путь к вашему изображению */
+  background-repeat: no-repeat; /* Повторение только по вертикали */
+  background-size: 100%;
+  background-position: center; /* Отступ слева адаптивный */
+}
+
+/* Основной контейнер модального окна */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  z-index: 1000;
+}
+
+/* Контент внутри модального окна */
+.modal-content {
+  position: absolute; /* Относительно модального контейнера */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Смещение на половину ширины и высоты */
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 1100px; /* Фиксированная ширина */
+  height: 640px;
+  margin: auto;
+  background-color: #202020;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка закрытия */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.slider {
+  position: relative;
+  width: 68%;
+  height: 100%;
+  text-align: center;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 48px;
+}
+.prev-btn:active, .next-btn:active {
+  background-color: rgba(0, 0, 0, 0);
+}
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 350px;
+}
+
+.title-cart-modal {
+  margin-bottom: 20px;
+}
+
+.cart-text-modal {
+  margin-top: 100px;
+  margin-left: 26px;
+}
+
+.cart-list {
+  margin-top: 30px;
+  list-style-type: none; /* Убираем точки */
+  padding-left: 0px;
+}
+.cart-list li {
+  margin: 10px 0px;
+}
+
+/* Основной контейнер модального окна */
+.modal-faq {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  z-index: 1000;
+}
+.modal-faq .cart-text-modal {
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.modal-faq .cart-list {
+  margin-top: 30px;
+  list-style-type: none; /* Убираем точки */
+  padding-left: 0px;
+}
+.modal-faq .cart-list li {
+  margin: 20px 0px;
+}
+.modal-faq .modal-content {
+  background-image: url("../img/img-modalFAQ1.png");
+  background-repeat: no-repeat; /* Повторение только по вертикали */
+  background-size: 100%;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  z-index: 5;
+}
+
+.switcher {
+  width: 350px;
+  height: 60px;
+  background: #393939;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-knob {
+  width: 200px;
+  height: 100%;
+  background: #222;
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.toggle-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.frames {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 24px;
+  color: #222;
+}
+
+.frame {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

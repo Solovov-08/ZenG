@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("./font/Gilroy-Light.woff") format("woff");
+  font-weight: 250;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("./font/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("./font/Jost-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.g-extra-48 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: normal;
+  color: #fff;
+}
+.g-extra-42 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: normal;
+  color: #fff;
+}
+.g-extra-34 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: normal;
+  color: #fff;
+}
+.g-extra-32 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: normal;
+  color: #fff;
+}
+
+.g-light-18 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 250;
+  font-size: 18px;
+  line-height: normal;
+  color: #fff;
+}
+.g-light-20 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 250;
+  font-size: 20px;
+  line-height: normal;
+  color: #fff;
+}
+
+.j-regular-32 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 0.9;
+  color: #fff;
+}
+.j-regular-24 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.9;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .j-regular-24 {
+    font-weight: 350;
+    line-height: 1;
+    font-size: 18px;
+  }
+  .g-extra-34 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 992px) {
+  .g-extra-34 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .g-extra-42 {
+    font-size: 38px;
+  }
+  .g-extra-32 {
+    font-size: 27px;
+  }
+  .g-extra-34 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .g-extra-42 {
+    font-size: 27px;
+  }
+  .g-light-20 {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=font-styles.css.map */

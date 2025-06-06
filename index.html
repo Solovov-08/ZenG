@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+
+        <!-- Подключаем CSS -->
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/main-media.css" rel="stylesheet">
+
+        <!-- Microsoft Clarity -->
+        <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "r4jqqnbrf5");
+        </script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3NYJGTEN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-3B3NYJGTEN');
+        </script>
+      </head>
+<body>
+    <header>
+        <div class="container con-head">
+            <!-- Контейнер ограничивает ширину -->
+            <div class="row align-items-center">
+                <!-- Логотип -->
+                <div class="col-3">
+                    <img src="img/Logo-header.svg" alt="Логотип" class="img-fluid img-logo">
+                    <img src="img/Logo-header-mobile.svg" alt="Логотип" class="img-logo-mobile">
+                </div>
+                
+                <!-- Навигация -->
+                <div class="col col-nav">
+                    <nav class="navbar-expand navbar-dark">
+                        <!-- Ссылки меню -->
+                         <div class="header_burger burger-btn" id="burger-btn">
+                            <span></span>
+                         </div>
+                        <div class="justify-content-end nav-link-box" id="nav-link-box">
+                            <ul class="navbar-nav g-light-18">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О нас</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Партнёрам</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Продукция</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container box-1">
+        <div class="row">
+            <div class="col-xl-8 col-xxl-6">
+                <p class="g-extra-42">Освещение с характером</p>
+                <p class="g-light-20">Создай свою уникальную атмосферу 
+                </br> с продукцией ZENGLOW</p>
+            </div>
+        </div>
+    </div>
+    <div class="container box-2">
+        <div class="row title-box2">
+            <p class="g-extra-42">О нас</p>
+            <p class="g-light-20">Мы создаём свет, который вдохновляет.</p>
+        </div>
+        <div class="row row-box2">
+            <div class="col-2 col-sm-5 col-md-6 col-lg-5">
+                <p class="j-regular-24">Каждый наш светильник — это больше, чем источник освещения. Это сочетание дизайнерского искусства, функциональности и тонкой работы мастеров. Мы верим, что свет способен менять пространство, делая его уютным, стильным и по-настоящему уникальным.</p>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-4">
+                <img src="img/triangle-sixangle.png" alt="" class="img-triangle img-fluid" id="myImage">
+            </div>
+        </div>
+        <div class="row row-box2 row-box22">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img src="img/place.png" alt="" class="img-fluid img-place">
+            </div>
+            <div class="col-sm-5 col-md-6 col-lg-5 mx-3">
+                <p class="j-regular-24">В нашем производстве мы используем только качественные материалы, следим за мировыми трендами и всегда добавляем собственное видение, чтобы каждая модель становилась отражением вашего характера и вкуса.</p>
+            </div>
+        </div>
+    </div>
+
+      
+      <div class="frames">
+        <div class="frame" id="frame1" style="display: block;"><div class="box-3d">
+            <model-viewer src="./model/model2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0" shadow-softness="0" exposure="0.98" camera-orbit="0deg 72deg 0.6m" field-of-view="22.98deg" auto-rotate class="col-12"> </model-viewer>
+        </div></div>
+        <div class="frame" id="frame2" style="display: none;">
+            <div class="box-3d">
+                <model-viewer src="./model/model_RGB2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="0" shadow-softness="0" exposure="0.98" camera-orbit="0deg 72deg 0.6m" field-of-view="22.98deg" auto-rotate class="col-12"> </model-viewer>
+            </div></div>
+        </div>
+      </div>
+      
+      <div class="box-3d">
+        <div class="switcher" id="switcher">
+            <div class="toggle-knob" id="toggleKnob">
+              <span class="toggle-text" id="toggleText">NoRGB</span>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+    <div class="container box-2">
+        <div class="row title-box2">
+            <p class="g-extra-42">Продукция</p>
+            <p class="g-light-20">Свет, который оживляет пространство.</p>
+        </div>
+        <div class="row cart-row">
+            <div class="col-10 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 cart-box" onclick="openModal('modal1')">
+                <img src="img/img-cart.png" alt="" class="img-fluid">
+                <div class="cart-box-text">
+                    <p class="g-extra-32">Starter KIT 6</p>
+                    <p class="g-light-18">Вдохновляющее освещение для особых моментов.</p>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 cart-box">
+                <img src="img/img-cart2.png" alt="" class="img-fluid" onclick="openModal('modal2')">
+                <div class="cart-box-text">
+                    <p class="g-extra-32">Expansion KIT 3</p>
+                    <p class="g-light-18">Легкость света в каждой детали.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container box-3">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <img src="img/logo-large.svg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container box-4">
+        <div class="row title-box4">
+            <p class="g-extra-42">Контакты</p>
+            <p class="g-light-20">Укажите свои данные, чтобы мы смогли с Вами связаться</p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <label for="phone">Ваш номер телефона:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$" required>
+                    
+                    <label for="name">Ваше ФИО:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ФИО" required>
+                    
+                    <div class="div form-box-but">
+                        <button type="submit">Отправить данные</button>
+                        <span>или</span>
+                        <button type="submit"><img src="img/whats-logo.svg" alt="" class="img-fluid">&nbsp;Напишите нам в WhatsApp</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <div class="container box-5">
+        <div class="row title-box5">
+            <p class="g-extra-42">Часто задаваемые вопросы</p>
+            <p class="g-light-20">Укажите свои данные, чтобы мы смогли с Вами связаться</p>
+        </div>
+        <div class="row row-box-faq">
+            <div class="col-11 col-sm-5 box-faq box-faq1" onclick="openModal('modal3')">
+                <p class="g-extra-34">Как подключить ?</p>
+            </div>
+            <div class="col-11 col-sm-6 box-faq box-faq2" onclick="openModal('modal4')">
+                <p class="g-extra-34">Как управлять ?</p>
+            </div>
+        </div>
+        <div class="row row-box-faq">
+            <div class="col-11 col-sm-7 box-faq box-faq3" onclick="openModal('modal5')">
+                <p class="g-extra-34">Сколько панелей</br> можно подключить</br> одновременно?</p>
+            </div>
+            <div class="col-11 col-sm-4 box-faq box-faq4" onclick="openModal('modal6')">
+                <p class="g-extra-34">Работа с умным домом</p>
+            </div>
+        </div>
+        <div class="row row-box-faq">
+            <div class="col-11 col-sm-4 box-faq box-faq5" onclick="openModal('modal7')">
+                <p class="g-extra-34">Для каких типов</br> поверхностей</br> подходят панели ?</p>
+            </div>
+            <div class="col-11 col-sm-7 box-faq box-faq6" onclick="openModal('modal8')">
+                <p class="g-extra-34">Как сделать интересную</br> композицию из</br> треугольников?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container box-6 my-4">
+        <div class="row justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="img/background-box6.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="d-flex justify-content-center">
+                <span class="g-light-20">© 2024 ZENGLOW. Все права защищены.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Модальные окна -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')"><img src="img/close.png" alt=""></span>
+
+            <div class="cart-text-modal">
+                <p class="g-extra-48 title-cart-modal">Starter KIT 6</p>
+                <div class="list-cart-box-modal">
+                    <p class="j-regular-32">Комплектация:</p>
+                    <ul class="cart-list">
+                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">1 RGB контроллер</li>
+                        <li class="j-regular-24">1 Блок питания</li>
+                        <li class="j-regular-24">1 Провод usb type-c</li>
+                        <li class="j-regular-24">18 Клейких креплений</li>
+                    </ul>
+                </div>
+            </div>
+
+              <div class="slider">
+                <img src="img/product1.png" alt="Product Image 1" class="slider-img">
+                <img src="img/product2.png" alt="Product Image 2" class="slider-img" style="display: none;">
+                <img src="img/product3.png" alt="Product Image 3" class="slider-img" style="display: none;">
+              </div>
+              <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+              <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+          
+        </div>
+      </div>
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')"><img src="img/close.png" alt=""></span>
+
+            <div class="cart-text-modal">
+                <p class="g-extra-48 title-cart-modal">Starter KIT 6</p>
+                <div class="list-cart-box-modal">
+                    <p class="j-regular-32">Комплектация:</p>
+                    <ul class="cart-list">
+                        <li class="j-regular-24">3 RGB светильников</li>
+                        <li class="j-regular-24">9 Клейких креплений</li>
+                    </ul>
+                </div>
+            </div>
+
+              <div class="slider">
+                <img src="img/product1.png" alt="Product Image 1" class="slider-img">
+                <img src="img/product2.png" alt="Product Image 2" class="slider-img" style="display: none;">
+                <img src="img/product3.png" alt="Product Image 3" class="slider-img" style="display: none;">
+              </div>
+              <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+              <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+          
+        </div>
+      </div>
+      <div id="modal3" class="modal-faq">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')"><img src="img/close.png" alt=""></span>
+            <div class="cart-text-modal">
+                <p class="g-extra-48 title-cart-modal">Как подключить </br>светильники?</p>
+                <div class="list-cart-box-modal">
+                    <ul class="cart-list">
+                        <li class="j-regular-24">Скачайте приложение BanlanX (доступно для iOS и Android)</li>
+                        <li class="j-regular-24">Включите светильник и активируйте режим сопряжения</li>
+                        <li class="j-regular-24">В приложении выберите «Добавить устройство» и следуйте инструкциям</li>
+                        <li class="j-regular-24">Настройте освещение под свои предпочтения: цвет, яркость, сцены</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="modal4" class="modal-faq">
+        <div class="modal-content" style="background-image: url('./img/img-modalFAQ2.png');">
+          <span class="close" onclick="closeModal('modal4')"><img src="img/close.png" alt=""></span>
+            <div class="cart-text-modal">
+                <p class="g-extra-48 title-cart-modal">Как управлять?</p>
+                <div class="list-cart-box-modal">
+                    <ul class="cart-list">
+                        <li class="j-regular-24">Через приложение – регулируйте яркость, цвет и эффекты</li>
+                        <li class="j-regular-24">Голосовые команды – работа с Google Assistant и Яндекс Алиса</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="modal5" class="modal-faq">
+        <div class="modal-content" style="background-image: url('./img/img-modalFAQ3.png');">
+          <span class="close" onclick="closeModal('modal5')"><img src="img/close.png" alt=""></span>
+            <div class="cart-text-modal">
+                <p class="g-extra-42 title-cart-modal">Сколько панелей </br>можно подключить?</p>
+                <div class="list-cart-box-modal">
+                    <ul class="cart-list">
+                        <li class="j-regular-24">Базовый комплект – до 30 панелей на один контроллер (рекомендуемый максимум для стабильной работы).</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="modal6" class="modal-faq">
+        <div class="modal-content" style="background-image: url('./img/img-modalFAQ4.png');">
+          <span class="close" onclick="closeModal('modal6')"><img src="img/close.png" alt=""></span>
+            <div class="cart-text-modal">
+                <p class="g-extra-42 title-cart-modal">Возможности работы</br> с умным домом</p>
+                <div class="list-cart-box-modal">
+                    <ul class="cart-list">
+                        <li class="j-regular-24">Apple HomeKit (Siri)</li>
+                        <li class="j-regular-24">Google Home</li>
+                        <li class="j-regular-24">Яндекс Алиса</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="modal7" class="modal-faq">
+        <div class="modal-content" style="background-image: url('./img/img-modalFAQ5.png');">
+          <span class="close" onclick="closeModal('modal7')"><img src="img/close.png" alt=""></span>
+            <div class="cart-text-modal">
+                <p class="g-extra-42 title-cart-modal">На какие поверхности </br>можно крепить?</p>
+                <div class="list-cart-box-modal">
+                    <ul class="cart-list">
+                        <li class="j-regular-24">Любые типы обоев</li>
+                        <li class="j-regular-24">Покрашенные стены (матовые или глянцевые)</li>
+                        <li class="j-regular-24">Штукатурка</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                        <li class="j-regular-24">&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div id="modal8" class="modal-faq">
+        <div class="modal-content" style="background-image: url('./img/img-modalFAQ6.png');">
+          <span class="close" onclick="closeModal('modal8')"><img src="img/close.png" alt=""></span>
+            <div class="cart-text-modal">
+                <p class="g-extra-48 title-cart-modal">Starter KIT 6</p>
+                <div class="list-cart-box-modal">
+                    <ul class="cart-list">
+                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">6 RGB светильников</li>
+                        <li class="j-regular-24">6 RGB светильников</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>
